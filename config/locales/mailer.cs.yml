@@ -1,0 +1,5 @@
+cs:
+  contactable:
+    mailer:
+      despatch:
+        subject: "Nová zpráva: %{message}"

@@ -1,0 +1,5 @@
+en:
+  contactable:
+    mailer:
+      despatch:
+        subject: "New message: %{message}"

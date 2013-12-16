@@ -1,0 +1,15 @@
+# Configure engine from yaml, you can set different config per environment
+
+default: &default
+
+  # Email, where it will be delivered
+  recipient: 'info@imin.cz'
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default

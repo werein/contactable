@@ -1,0 +1,30 @@
+base_locale: en
+locales: ['en', 'cs']
+
+# i18n data storage
+data:
+  # The default YAML adapter supports reading from and writing to YAML files
+  adapter: yaml
+  # a list of file globs to read from per-locale
+  read: 
+    # this one is default:
+    - 'config/locales/%{locale}.yml'
+    # add this one to also read from namespaced files, e.g. simple_form.en.yml:
+    - 'config/locales/*.%{locale}.yml'
+  # a list of {key pattern => file} routes, matched top to bottom
+  write:
+    # this would save all devise keys in it's own file (per locale):
+    - ['contactable.*', 'config/locales/contactable.%{locale}.yml']
+    - ['notice.*', 'config/locales/notice.%{locale}.yml']
+    # this is the default catch-all:
+    - 'config/locales/%{locale}.yml' # path is short for ['*', path]
+
+# i18n usage search in source
+search:
+  # explicitly exclude files (default: blank = exclude no files)
+  exclude:
+    - '*_controller.rb'
+    - '*/mailers/*'
+
+ignore:
+  - app.*

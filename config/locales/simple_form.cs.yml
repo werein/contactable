@@ -1,0 +1,12 @@
+cs:
+  simple_form:
+    labels:
+      contact:
+        name: Vaše jméno
+        email: Váš email
+        subject: Předmět
+        body: Obsah zprávy
+  helpers:
+    submit:
+      contact:
+        create: Odeslat email

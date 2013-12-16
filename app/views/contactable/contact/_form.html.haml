@@ -1,0 +1,8 @@
+= simple_form_for @contact, url: contact_path do |f|
+  = f.input :name
+  = f.input :email
+  = f.input :subject
+  = f.input :body, as: :text
+
+  .center
+    = f.button :submit, class: 'btn btn-large btn-success'
