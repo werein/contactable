@@ -1,4 +1,4 @@
 module Contactable
-  class ApplicationController < ActionController::Base
+  class ApplicationController < Core::ApplicationController
   end
 end
