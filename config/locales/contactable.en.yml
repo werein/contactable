@@ -1,0 +1,14 @@
+# config/locales/en.yml
+en:
+  contactable:
+    contact:
+      new:
+        title: Contact us
+      create:
+        notice: Message was successfully send
+        alert: Please fill all
+      example:
+        name: Steve Jobs
+        mail: steve.jobs@apple.com
+        subject: E-commerce website
+        body: Hi..... Best Regards Steve Jobs
