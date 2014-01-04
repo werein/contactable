@@ -1,14 +1,11 @@
-# config/locales/cs.yml
+---
 cs:
   contactable:
     contact:
+      form:
+        body: Dobrý den..... S pozdravem Jan Novák
+        email: jan.novak@seznam.cz
+        name: Jan Novák
+        subject: Vytvoření webových stránek
       new:
         title: Kontaktujte nás
-      create:
-        notice: Zpráva byla úspěšně odeslána
-        alert: Prosím vyplňte všechny položky
-      example:
-        name: Jan Novák
-        mail: jan.novak@seznam.cz
-        subject: Vytvoření webových stránek
-        body: Dobrý den..... S pozdravem Jan Novák

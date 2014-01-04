@@ -42,3 +42,5 @@ gem 'compass-rails', git: 'https://github.com/Compass/compass-rails.git', branch
 gem 'bootstrap-sass', '~> 3.0'
 
 gem 'i18n-tasks', '~> 0.2'
+
+gem 'letter_opener'
