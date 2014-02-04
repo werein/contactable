@@ -13,11 +13,18 @@ data:
     - 'config/locales/*.%{locale}.yml'
   # a list of {key pattern => file} routes, matched top to bottom
   write:
-    # this would save all devise keys in it's own file (per locale):
+    # write every namespace to its own file:
     - ['contactable.*', 'config/locales/contactable.%{locale}.yml']
+    - ['contactable.mailer.*', 'config/locales/mailer.%{locale}.yml']
     - ['notice.*', 'config/locales/notice.%{locale}.yml']
+    - ['activerecord.*', 'config/locales/activerecord.%{locale}.yml']
+    - ['routes.*', 'config/locales/routes.%{locale}.yml']
+    - ['enumerize.*', 'config/locales/enumerize.%{locale}.yml']
+    - ['simple_form.*', 'config/locales/simple_form.%{locale}.yml']
+    - ['helpers.*', 'config/locales/simple_form.%{locale}.yml']
     # this is the default catch-all:
     - 'config/locales/%{locale}.yml' # path is short for ['*', path]
+
 
 # i18n usage search in source
 search:
@@ -26,5 +33,9 @@ search:
     - '*_controller.rb'
     - '*/mailers/*'
 
-ignore:
-  - app.*
+# directories containing relative keys
+relative_roots:
+  # default:
+  - app/views
+  # add a custom one:
+  - app/cells
