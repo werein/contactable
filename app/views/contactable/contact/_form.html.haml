@@ -3,6 +3,4 @@
   = f.input :email, placeholder: t('.email')
   = f.input :subject, placeholder: t('.subject')
   = f.input :body, as: :text, placeholder: t('.body')
-
-  .center
-    = f.button :submit, class: 'btn btn-large btn-success'
+  .form-group.button.contact_submit= f.button :submit, class: 'submit'
