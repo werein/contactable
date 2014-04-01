@@ -13,34 +13,13 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-# Use head version of engines
-gem 'core', 
-  branch: 'master',
-  git: 'git@git.imin.cz:project/core.git'
-
-gem 'auth', 
-  branch: 'master',
-  git: 'git@git.imin.cz:project/auth.git'
-
-# Core dependencies
-gem 'ckeditor-outsourced', branch: 'master',
-  git: 'git@git.imin.cz:project/ckeditor-outsourced.git'
-
-gem 'uploadable', branch: 'master',
-  git: 'git@git.imin.cz:project/uploadable.git'
-
-gem 'extension-multiselect', branch: 'master',
-  git: 'git@git.imin.cz:project/extension-multiselect.git'
-
-gem 'sidrjs-rails', branch: 'master',
-  git: 'git@git.imin.cz:project/sidrjs-rails.git'
-
-# Test dependencies
-gem 'testable', 
-  branch: 'master',
-  git: 'git@git.imin.cz:project/testable.git'
-
 # Demo dependencies 
-gem 'compass-rails', github: 'Compass/compass-rails'
+gem 'compass-rails'
 gem 'bootstrap-sass', '~> 3.1'
-gem 'i18n-tasks', '~> 0.2'
+gem 'sass-rails', '~> 4.0.2'
+gem 'rails_admin'
+gem 'x-editable-rails'
+gem 'simple_form', github: 'plataformatec/simple_form'
+
+gem 'tuberack', branch: :master, github: 'werein/tuberack'
+gem 'foundationstone', branch: :master, github: 'werein/foundationstone'

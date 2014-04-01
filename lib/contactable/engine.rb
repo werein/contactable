@@ -1,4 +1,4 @@
-require 'core'
+require 'foundationstone'
 
 module Contactable
   class Engine < ::Rails::Engine
